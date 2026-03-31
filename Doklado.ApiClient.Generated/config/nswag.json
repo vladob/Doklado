@@ -1,0 +1,25 @@
+{
+  "runtime": "Net80",
+  "documentGenerator": {
+    "fromDocument": {
+      "url": "../../openapi/DokladoAPI.json"
+    }
+  },
+  "codeGenerators": {
+    "openApiToCSharpClient": {
+      "className": "DokladoApiClient",
+      "namespace": "Doklado.ApiClient.Generated",
+      "output": "../Generated/DokladoApiClient.cs",
+      "generateClientClasses": true,
+      "generateClientInterfaces": true,
+      "generateDtoTypes": true,
+      "injectHttpClient": true,
+      "disposeHttpClient": false,
+      "useBaseUrl": true,
+      "generateOptionalParameters": true,
+      "operationGenerationMode": "SingleClientFromOperationId",
+      "dateType": "System.DateTime",
+      "jsonLibrary": "NewtonsoftJson"
+    }
+  }
+}
